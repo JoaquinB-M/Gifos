@@ -1,0 +1,60 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+input {
+    width: 45%;
+    border-radius: 60px 0px 0px 60px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 20px;
+    outline: none;
+    border: 1px #572EE5 solid;
+}
+
+.container-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 39px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 60px 60px 0px;
+    background-color: #572EE5;
+    cursor: pointer;
+}
+
+h1 { 
+    color: #572EE5;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #572EE5;
+    font-weight: bold;
+    font-weight: 400;
+}
+
+.searchContainer {
+    width: 10%;
+    background-color: #572EE5;
+}
+
+.autoCompleteContainer {
+     position: relative;
+}

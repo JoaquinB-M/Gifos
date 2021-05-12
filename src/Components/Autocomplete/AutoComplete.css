@@ -1,0 +1,20 @@
+.AutoComplete{
+  position: absolute;
+  left: -370px;
+  width: 404px;
+  background-color: #fff;
+  box-shadow: 0px 4px 5px 1px #0e0e0e;
+}
+
+.AutoComplete li {
+  border-bottom: solid 1px lightgrey;
+  font-size: 10px;
+  padding: 10px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+}
+.AutoComplete li:hover {
+  font-weight: 800;
+}
+
