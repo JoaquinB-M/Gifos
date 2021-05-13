@@ -15,7 +15,7 @@ export const Search = () => {
 
     const setSearch = (event) => {
         setQuery(event.target.value);
-        query.length > 3 && setIsFetched(false)
+        query.length && setIsFetched(false)
     }
 
     const handleGifs = () => {
@@ -34,7 +34,7 @@ export const Search = () => {
                 </div>
             </div>
             <div className="autoCompleteContainer">
-                {  query.length !== 0 && <AutoComplete {...{isFetched, setIsFetched, setGifsFetched}} />}
+                {  query.length !== 0 && <AutoComplete {...{isFetched, setIsFetched, setGifsFetched, Gifsfetched}} />}
             </div>
     
             <h2>Busca los <span>GIFS</span>! que te gusten</h2>
