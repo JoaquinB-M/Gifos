@@ -7,6 +7,7 @@ export const GisfPanel = ({Gifsfetched, setGifsFetched}) => {
     const { gifs, setGifs, Gifos, query } = useContext(AppContext)
     //const [numberGifs, setNumberGifs] = useState(0);
 
+
     useEffect(()=>{
         const getGifos = async() => {
             const data = await Gifos.getGifs(query)

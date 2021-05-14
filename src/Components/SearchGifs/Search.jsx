@@ -14,7 +14,7 @@ export const Search = () => {
     const [Gifsfetched, setGifsFetched] = useState(false)
 
     const setSearch = (event) => {
-        setQuery(event.target.value);
+        setQuery(event.target.value)
         query.length && setIsFetched(false)
     }
 

@@ -2,12 +2,13 @@ import React, {useContext, useEffect} from 'react'
 import { AppContext } from '../../context/AppContext'
 import './AutoComplete.css'
 
-export default function AutoComplete({isFetched, setIsFetched, setGifsFetched}) {
-  const { autoComplete, setAutoComplete, Gifos, query, setQuery } = useContext(AppContext)
+export default function AutoComplete({isFetched, setIsFetched, setGifsFetched, Gifsfetched}) {
+  const { autoComplete, setAutoComplete, Gifos, query, setQuery, setGifs} = useContext(AppContext)
   
   const handleOptions = (result) => {
     setQuery(result)
     setGifsFetched(true)
+
     document.getElementById("lista").style.display = "none"
   }
 
