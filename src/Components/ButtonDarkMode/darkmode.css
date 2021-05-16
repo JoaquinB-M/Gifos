@@ -5,7 +5,7 @@
     padding: 20px 10px 10px 10px;
 } 
 
-.dark_button{
+.dark_button_off{
     background-color: white;
     padding: 15px 32px;
     border-radius: 25px;
@@ -14,4 +14,30 @@
     font-size: 14px;
     color: #6809E1;
     border: 1px solid #6809E1;
+}
+
+.dark_button_off:hover{
+    background-color: black;
+    color: white
+}
+
+.dark_button_on {
+    background-color: #20222B;
+    padding: 15px 32px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark_button_on:hover {
+    background-color: white;
+    color: black
+}
+
+.darkModeOn {
+    background-color: #20222B;
+    color: white;
 }

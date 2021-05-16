@@ -3,7 +3,7 @@ import { AppContext } from '../../context/AppContext'
 import './AutoComplete.css'
 
 export default function AutoComplete({isFetched, setIsFetched, setGifsFetched, Gifsfetched}) {
-  const { autoComplete, setAutoComplete, Gifos, query, setQuery, setGifs} = useContext(AppContext)
+  const { autoComplete, setAutoComplete, Gifos, query, setQuery } = useContext(AppContext)
   
   const handleOptions = (result) => {
     setQuery(result)

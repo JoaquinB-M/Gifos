@@ -5,13 +5,14 @@
     align-items: center;
     margin: auto;
     width: 100%;
+    height: 100%;
     padding: 20px 0px 20px 0px;
 }
 
 input {
     width: 45%;
     border-radius: 60px 0px 0px 60px;
-    height: 35px;
+    height: 39px;
     font-size: 20px;
     font-weight: 200;
     padding-left: 20px;
@@ -57,4 +58,22 @@ h2 {
 
 .autoCompleteContainer {
      position: relative;
+}
+
+.searchIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.searchDark{
+    background-color: #282C34;
+    border-color: #572EE5;
+    width: 100%;
+    height: 100%;
+}
+
+.searchDark input{
+    background-color: #141514;
+    color: white;
+    border-color: #572EE5;
 }
