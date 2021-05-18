@@ -18,10 +18,12 @@
 
 .dark_button_off:hover{
     background-color: black;
+    transition: background-color .8s;
     color: white
 }
 
 .dark_button_on {
+    transition: background-color .8s;
     background-color: #20222B;
     padding: 15px 32px;
     border-radius: 25px;
@@ -32,12 +34,19 @@
     border: 1px solid white;
 }
 
+.darkModeOff {
+    transition: background-color .8s;
+}
+
 .dark_button_on:hover {
     background-color: white;
-    color: black
+    transition: background-color .8s;
+    color: black;
+    
 }
 
 .darkModeOn {
+    transition: background-color .8s;
     background-color: #20222B;
     color: white;
 }

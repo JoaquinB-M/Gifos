@@ -1,28 +1,18 @@
-import React, {useContext, useEffect} from 'react'
+import React, { useContext } from 'react'
 import { AppContext } from '../../context/AppContext'
 import "./gifsPanel.css";
 
 
 export const GisfPanel = ({Gifsfetched, setGifsFetched}) => {
-    const { gifs, setGifs, Gifos, query, darkMode } = useContext(AppContext)
+    const { gifs, darkMode } = useContext(AppContext)
     //const [numberGifs, setNumberGifs] = useState(0);
 
-
-    useEffect(()=>{
-        const getGifos = async() => {
-            const data = await Gifos.getGifs(query)
-            setGifs(data.data)
-            setGifsFetched(true)
-        }
-        Gifsfetched && getGifos()
-    }, [Gifos, Gifsfetched, query, setGifs, setGifsFetched])
-
-    const Gifslist = Gifsfetched ? (gifs.map(result => (
+    const Gifslist = !Gifsfetched ? (gifs.map(result => (
         <img key={result.id} src={result.images.downsized.url} alt=""/>
     ))) : (
         <div>Cargando...</div>
     )
-
+    
     return(
         <div>
             <div className={`container_gifs_panel ${darkMode === true ? "darkModeOn" : "darkModeOff"}`}>

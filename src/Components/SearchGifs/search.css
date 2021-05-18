@@ -1,4 +1,5 @@
 .conteiner {
+    transition: background-color .8s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,14 +28,25 @@ input {
     justify-content: center;
 }
 
-.logo {
+.logoSearch {
     height: 39px;
-    width: 70px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0px 60px 60px 0px;
     background-color: #572EE5;
+    cursor: pointer;
+}
+
+.logoClose {
+    height: 39px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #572EE5;
+    border-left: 2px solid #282C34;
     cursor: pointer;
 }
 
@@ -65,15 +77,31 @@ h2 {
     height: 25px;
 }
 
+
 .searchDark{
+    transition: background-color .8s;
     background-color: #282C34;
     border-color: #572EE5;
     width: 100%;
     height: 100%;
 }
 
+.searchDark h1{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+
+.searchDark h2{
+    color: #fff;
+    font-weight: bold;
+    font-weight: 400;
+}
+
 .searchDark input{
     background-color: #141514;
-    color: white;
+    color: #536D75;
     border-color: #572EE5;
 }

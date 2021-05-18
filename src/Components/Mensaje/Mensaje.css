@@ -1,6 +1,6 @@
 .Conteiner {
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
 }
@@ -13,6 +13,17 @@
     display: block;
 }
 
-.DarkModeOn {
-    background-color: #20222B;
+.darkModeOff h3{ 
+    color: #572EE5;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+h3{
+    color: #fff;
+    padding-top:  40px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px;
 }

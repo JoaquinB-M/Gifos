@@ -5,16 +5,16 @@ import "./Mensaje.css"
 
 export const Mensaje = () => {
 
-    const { darkMode, Gifsfetched } = useContext(AppContext)
+    const { darkMode } = useContext(AppContext)
 
 
     return(
         <div className={`Conteiner ${darkMode === true ? "darkModeOn" : "darkModeOff"}`}>
-            <h1 className={`${Gifsfetched === true ? "none" : "block"}`}>
-                Bienvenido utiliza la barra de busqueda 
+            <h3>
+                Bienvenido utiliza la barra de
                 <br></br> 
-                para buscar los mejores GIFS!
-            </h1>
+                busqueda  para buscar los GIFS!
+            </h3>
         </div>
     )
 }

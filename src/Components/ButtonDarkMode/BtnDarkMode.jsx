@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../../context/AppContext'
 import ImgLogoDesktopLighted from "./images/logo-desktop.svg";
+import ImgLogoDesktopDark from "./images/logo-mobile-modo-noct.svg"
 import "./darkmode.css"
 
 
@@ -16,12 +17,11 @@ export const BtnDarkMode = () => {
         setDarkMode(false)
     }
 
-    console.log(darkMode)
 
     return(
         <div className={`header ${darkMode === true ? "darkModeOn" : "darkModeOff"}`}>
             <div className="icon_gifs">
-                <img src={ImgLogoDesktopLighted} alt="logo"/>
+                <img src={`${darkMode === true ? ImgLogoDesktopDark : ImgLogoDesktopLighted}`} alt="logo"/>
             </div>
             { darkMode === false ?
                 <div>
