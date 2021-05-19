@@ -15,11 +15,10 @@ export const AppProvider = props => {
         const updateAutoComplete = async() => {
           const data = await Gifos.getAutoComplete(query)
           setAutoComplete(data)
-          setIsFetched(true)
         }
-        
-        !isFetched && query.length && updateAutoComplete() 
-      }, [ query, autoComplete, isFetched, setAutoComplete, setIsFetched ])
+
+        query.length && updateAutoComplete() 
+      }, [ query, setAutoComplete ])
 
     useEffect(()=>{
         const getGifos = async() => {

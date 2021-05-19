@@ -61,6 +61,7 @@ h2 {
     color: #572EE5;
     font-weight: bold;
     font-weight: 400;
+    padding: 40px;
 }
 
 .searchContainer {
@@ -98,6 +99,7 @@ h2 {
     color: #fff;
     font-weight: bold;
     font-weight: 400;
+    padding: 40px;
 }
 
 .searchDark input{

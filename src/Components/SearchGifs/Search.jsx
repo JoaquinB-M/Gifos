@@ -17,6 +17,7 @@ export const Search = () => {
 
     const handleGifs = () => {
         setGifsFetched(true)
+        setIsFetched(false)
     }
 
     const close = () => {
