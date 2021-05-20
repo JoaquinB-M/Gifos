@@ -5,7 +5,7 @@ export const AppContext = createContext()
 
 export const AppProvider = props => {
     const [gifs, setGifs] = useState([])
-    const [query, setQuery] = useState("");
+    const [query, setQuery] = useState("")
     const [autoComplete, setAutoComplete] = useState([])
     const [isFetched, setIsFetched] = useState(false)
     const [Gifsfetched, setGifsFetched] = useState(false)
@@ -22,9 +22,14 @@ export const AppProvider = props => {
 
     useEffect(()=>{
         const getGifos = async() => {
-            const data = await Gifos.getGifs(query)
-            setGifs(data.data)
-            setGifsFetched(false)
+            try {
+                const data = await Gifos.getGifs(query)
+                setGifs(data.data)
+                setGifsFetched(false)
+                data.data.length === 0 && query.length > 0 && alert('no se encontraron resultados :( , prueba otra busqueda') 
+            } catch (error) {
+                alert( " Algo salio mal :( " )
+            }
         }
         Gifsfetched && getGifos()
     }, [Gifsfetched, query, setGifs, setGifsFetched])
