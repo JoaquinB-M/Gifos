@@ -13,7 +13,7 @@ export const GisfPanel = ({Gifsfetched}) => {
     const Gifslist = !Gifsfetched ? (gifs.map(result => (
         <img key={result.id} src={result.images.downsized.url} alt=""/>
         ))) : (
-        <FadeLoader color="#572EE5" loading="true" size={150}/>
+        <FadeLoader background-color="none" color="#572EE5" />
     )
     
     return(
