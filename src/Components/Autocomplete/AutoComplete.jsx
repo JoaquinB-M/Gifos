@@ -2,8 +2,8 @@ import React, { useContext } from 'react'
 import { AppContext } from '../../context/AppContext'
 import './AutoComplete.css'
 
-export default function AutoComplete({isFetched, setGifsFetched}) {
-  const { autoComplete,  setQuery, setIsFetched } = useContext(AppContext)
+export default function AutoComplete() {
+  const { autoComplete,  setQuery, setIsFetched, isFetched, setGifsFetched } = useContext(AppContext)
   
   const handleOptions = (result) => {
     setQuery(result)

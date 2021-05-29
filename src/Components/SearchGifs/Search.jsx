@@ -46,12 +46,12 @@ export const Search = () => {
                 </div>
             </div>
             <div className="autoCompleteContainer">
-                {  (autoComplete.length !== 0 && isFetched === true) && <AutoComplete {...{isFetched, setIsFetched, setGifsFetched, Gifsfetched}} />}
+                {  (autoComplete.length !== 0 && isFetched === true) && <AutoComplete/>}
             </div>
     
             <h2>Busca los <span>GIFS</span>! que te gusten</h2>
             <div>
-                { gifs.length !== 0 && <GisfPanel {...{Gifsfetched, setGifsFetched}}/>}
+                { gifs.length !== 0 && <GisfPanel/>}
             </div>
         </div>
     )

@@ -4,16 +4,17 @@ import FadeLoader from "react-spinners/FadeLoader"
 import "./gifsPanel.css";
 
 
-export const GisfPanel = ({Gifsfetched}) => {
+export const GisfPanel = () => {
 
 
-    const { gifs, darkMode } = useContext(AppContext)
-    //const [numberGifs, setNumberGifs] = useState(0);
+    const { gifs, darkMode, Gifsfetched } = useContext(AppContext)
 
-    const Gifslist = !Gifsfetched ? (gifs.map(result => (
-        <img key={result.id} src={result.images.downsized.url} alt=""/>
-        ))) : (
-        <FadeLoader background-color="none" color="#572EE5" />
+
+    const Gifslist = Gifsfetched ? (
+            <FadeLoader background-color="none" color="#572EE5" />
+        ) : (gifs.map(result => (
+            <img key={result.id} src={result.images.downsized.url} alt=""/>
+        ))
     )
     
     return(
