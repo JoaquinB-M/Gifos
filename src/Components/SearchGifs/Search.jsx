@@ -9,7 +9,7 @@ import ImgIconSearcg from './imagesSearch/icon-search-mod-noc.svg'
 import AutoComplete from '../Autocomplete/AutoComplete.jsx'
 
 export const Search = () => {
-    const { query, setQuery, darkMode, isFetched, setIsFetched, Gifsfetched, setGifsFetched, gifs, setGifs, autoComplete } = useContext(AppContext)
+    const { query, setQuery, darkMode, isFetched, setIsFetched, setGifsFetched, gifs, setGifs, autoComplete } = useContext(AppContext)
 
     const setSearch = (event) => {
         setQuery(event.target.value)
@@ -33,7 +33,7 @@ export const Search = () => {
 
 
     return (
-        <div className={`conteiner ${darkMode === true ? "searchDark" : "searchLight"}`}>
+        <div className={`conteiner ${darkMode === true ? "searchDark" : "searchLight"} bounce-in-top`}>
             <h1>¡Inspirate y busca los mejores <span>GIFS</span>!</h1>
             <img src={ImgIlustraHeader} alt="logo"/>
             <div className="container-input">
